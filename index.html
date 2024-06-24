@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/5787/5787016.png"
+      type="image/x-icon"
+    />
+    <title>document</title>
+    <!-- Delicious Bites Menu -->
+  </head>
+  <body>
+    <!-- Scroll to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 10px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 10 ||
+          document.documentElement.scrollTop > 10
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- header -->
+    <header>
+      <nav class="nav">
+        <ul>
+          <a href="#Appetizers"><li>Appetizers</li></a>
+          <a href="#Main-Courses"><li>Main Courses</li></a>
+          <a href="#Desserts"><li>Desserts</li></a>
+          <a href="./contact.html"><li id="contact">Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <h1>Delicious Bites Menu</h1>
+      <div class="container" id="Appetizers">
+        <h2>Appetizers</h2>
+        <ul>
+          <li id="CS">
+            <div>
+              <strong>Caprese Salad</strong>
+              <p>
+                Fresh tomatoes, mozzarella, and basil drizzled with balsamic
+                glaze.
+              </p>
+            </div>
+            <figure class="img-cont">
+              <img
+                src="https://img.freepik.com/premium-photo/isolated-portion-gourmet-caprese-salad_219193-9234.jpg"
+                alt="Caprese Salad"
+              />
+              <figcaption>Caprese Salad</figcaption>
+            </figure>
+          </li>
+          <li id="ER">
+            <div>
+              <strong>Egg Rolls</strong>
+              <p>Beef, ginger , and garlic powder with shredded cabbage</p>
+            </div>
+            <figure class="img-cont">
+              <img
+                src="https://cdn.pratico-pratiques.com/app/uploads/sites/3/2018/08/25120501/egg-rolls-aux-porc.jpg"
+                alt="Egg Rolls"
+              />
+              <figcaption>Egg Rolls</figcaption>
+            </figure>
+          </li>
+          <li id="VS">
+            <div>
+              <strong>Vegetable Soup</strong>
+              <p>Sweet potato, green beans , and zucchini with white vinegar</p>
+            </div>
+            <figure class="img-cont">
+              <img
+                src="https://media.istockphoto.com/id/953852792/vector/hot-bowl-of-soup-dish-isolated-icon-soup-with-vegetables-isolated-on-white-background-vector.jpg?s=612x612&w=0&k=20&c=HHxbo2Ki67O4rj229U70sOMC3UamKyGTziNXpuTd1BQ="
+                alt="VEGSOUP"
+              />
+              <figcaption>Vegetable Soup</figcaption>
+            </figure>
+          </li>
+          <!-- Add two more appetizer items with descriptions -->
+        </ul>
+      </div>
+
+      <div class="container" id="Main-Courses">
+        <h2>Main Courses</h2>
+        <ul>
+          <li id="GS">
+            <div>
+              <strong>Grilled Salmon</strong>
+              <p>
+                Salmon fillet seasoned and grilled to perfection, served with
+                lemon butter sauce.
+              </p>
+            </div>
+            <figure>
+              <img
+                src="https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Y8RYbZFcvec-FXMMuoU-qkprC3TUFNiw3Ysoe8Drn6g="
+                alt=""
+              />
+              <figcaption>Grilled Salmon</figcaption>
+            </figure>
+          </li>
+          <li id="BD">
+            <div>
+              <strong>Beef dinner</strong>
+              <p>
+                Food Beef dinner Delicious grilled stake and vegetables Big
+                steak meat dish on a main course plate
+              </p>
+            </div>
+            <figure>
+              <img
+                src="https://img.freepik.com/premium-photo/food-beef-dinner-delicious-grilled-stake-vegetables-big-steak-meat-dish-main-course-plate_709963-1338.jpg"
+              />
+              <figcaption>Beef dinner</figcaption>
+            </figure>
+          </li>
+          <li id="SS">
+            <div>
+              <strong>Skirt Steak </strong>
+              <p>
+                Hot fast cook Great flavour Grass fed beef Bavette is from the
+                flank (belly) of our slowly
+              </p>
+            </div>
+            <figure>
+              <img
+                src="https://recipemarker.com/wp-content/uploads/2021/05/Flank-Steak-Substitute-1-225x225.jpg"
+              />
+              <figcaption>Skirt Steak</figcaption>
+            </figure>
+          </li>
+
+          <!-- Add two more main course items with descriptions -->
+        </ul>
+      </div>
+
+      <div class="container" id="Desserts">
+        <h2>Desserts</h2>
+        <ul>
+          <li id="CF">
+            <div>
+              <strong>Chocolate Fondue</strong>
+              <p>
+                Assorted fruits and marshmallows served with rich chocolate
+                fondue.
+              </p>
+            </div>
+            <figure>
+              <img
+                src="https://img.freepik.com/photos-premium/fondue-au-chocolat-fruits-grille-pain_189959-5016.jpg"
+                alt="Chocolate Fondue"
+              />
+              <figcaption>Chocolate Fondue</figcaption>
+            </figure>
+          </li>
+          <!-- Add two more dessert items with descriptions -->
+          <li id="CC">
+            <div>
+              <strong>Chocolate CAKE</strong>
+              <p>Triple Layer Chocolate Cake</p>
+            </div>
+            <figure>
+              <img
+                src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/gydtpqmh/b2df4030-e12e-4ed4-bd66-b124ba9328c7"
+                alt="Chocolate Cake"
+              />
+              <figcaption>Chocolate CAKE</figcaption>
+            </figure>
+          </li>
+          <li id="GV">
+            <div>
+              <strong>Glace à la vanille au thermomix</strong>
+              <p>
+                La glace à la vanille au Thermomix est idéale pour accompagner
+                un fondant au chocolat, une tarte à ...
+              </p>
+            </div>
+            <figure>
+              <img
+                src="https://www.cookomix.com/wp-content/uploads/2016/04/glace-vanille-thermomix-800x600.jpg"
+                alt="Glace à la vanille"
+              />
+              <figcaption>Glace à la vanille au thermomix</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer id="contact">
+      <p><a href="./contact.html">Contact us for reservations</a></p>
+    </footer>
+  </body>
+</html>

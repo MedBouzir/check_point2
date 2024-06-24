@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0 auto;
+}
+
+@keyframes backBody {
+  0% {
+    background-position: center bottom;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: center bottom;
+    background-size: 150%;
+  }
+}
+
+body {
+  background-image: url(https://i.redd.it/qg70jvgnpq291.jpg);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 41, 41, 1) 100%
+  );
+
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.71);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+@keyframes MAINANIM {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  margin-top: 80px;
+  animation: MAINANIM 3s ease 0s 1 normal forwards;
+}
+
+header nav ul a li {
+  color: #fda400;
+  margin-top: 20px;
+  transition: 0.1s;
+  padding: 0px 15px 10px 10px;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .nav ul a li {
+    float: none;
+    display: block;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav ul a {
+  text-decoration: none;
+}
+
+header nav ul a li:hover {
+  color: #ffffff;
+  border-bottom: #ffffff solid 3px;
+  border-right: #ffffff solid 3px;
+}
+
+.container ul li {
+  border-radius: 15px;
+  border: solid #fda400 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2%;
+  /* background-color: #434343; */
+  padding: 20px;
+}
+.container ul li strong {
+  color: white;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 5px rgb(3, 3, 3);
+}
+.container ul li p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: silver;
+}
+.container ul li figure img {
+  filter: grayscale(100%);
+  width: 200px;
+  border-radius: 100%;
+  border: #fda400 solid 3px;
+  transition: 0.5s;
+}
+
+.container ul li figure figcaption {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: silver;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#CS {
+  background-image: url(https://as1.ftcdn.net/v2/jpg/05/98/35/78/1000_F_598357862_eqsgwSgIxEFlqjKWBdruS6leTPo7dSM5.jpg);
+}
+
+#ER {
+  background-image: url(https://png.pngtree.com/background/20230528/original/pngtree-white-plate-has-a-bowl-of-spring-rolls-on-it-picture-image_2782078.jpg);
+  background-size: cover;
+}
+
+#VS {
+  background-image: url(https://www.wallpaperflare.com/static/18/877/73/food-vegetables-vegetable-soup-wallpaper.jpg);
+}
+#GS {
+  background-image: url(https://cdn11.bigcommerce.com/s-ul1e48c1/products/134/images/1475/atlantic_salmon__52926.1659093230.500.750.jpg?c=2);
+  background-size: cover;
+}
+#BD {
+  background-image: url(https://img.freepik.com/premium-photo/food-beef-dinner-delicious-grilled-stake-vegetables-big-steak-meat-dish-main-course-plate_709963-1338.jpg);
+  background-size: 70%;
+}
+#SS {
+  background-image: url(https://recipes.net/wp-content/uploads/2021/11/flank-steak-vs-skirt-steak.jpg);
+  background-size: cover;
+}
+#CF {
+  background-image: url(https://static.750g.com/images/1200-630/909b31947d5d5992d7751c5a587bd4f5/fondue-au-chocolat.jpeg);
+}
+#CC {
+  background-image: url(https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/gydtpqmh/b2df4030-e12e-4ed4-bd66-b124ba9328c7);
+}
+#GV {
+  background-image: url(https://www.cookomix.com/wp-content/uploads/2016/04/glace-vanille-thermomix-800x600.jpg);
+  background-size: cover;
+}
+#CS:hover {
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+
+#ER:hover {
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+
+#VS:hover {
+  animation: backBody 3s ease 0s 1 normal forwards;
+  padding-bottom: 800px;
+}
+
+#GS:hover {
+  animation: backBody 3s ease 0s 1 normal forwards;
+  padding-bottom: 700px;
+}
+#BD:hover {
+  padding-bottom: 800px;
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+#SS:hover {
+  padding-bottom: 500px;
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+#CF:hover {
+  padding-bottom: 500px;
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+#CC:hover {
+  padding-bottom: 500px;
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+#GV:hover {
+  padding-bottom: 500px;
+  animation: backBody 3s ease 0s 1 normal forwards;
+}
+.container ul li:hover img {
+  filter: grayscale(0%);
+  width: 350px;
+}
+
+.container ul li:hover figcaption {
+  color: #fda400;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px;
+  color: #fda400;
+  text-shadow: 2px 2px 15px rgb(3, 3, 3);
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+h2 {
+  margin-left: 15%;
+  color: #fda400;
+  text-shadow: 2px 2px 15px rgb(3, 3, 3);
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+#contact_info {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 30px;
+  font-size: 30px;
+  color: white;
+  box-shadow: 14px -23px 50px 21px rgba(232, 190, 41, 0.69);
+  -webkit-box-shadow: 14px -23px 50px 21px rgba(232, 190, 41, 0.69);
+  -moz-box-shadow: 14px -23px 50px 21px rgba(232, 190, 41, 0.69);
+}
+#contact_footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  margin-bottom: 30px;
+  border-width: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: #fda400;
+}
